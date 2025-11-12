@@ -242,7 +242,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
         ["@none"] = colors.Fg,
         ["@conceal"] = colors.Grey,
         ["@nospell"] = colors.Fg,
-        ["@spell"] = colors.Fg,
+        ["@spell"] = {},
 
         -- Operators
         ["@operator"] = colors.Fg,
