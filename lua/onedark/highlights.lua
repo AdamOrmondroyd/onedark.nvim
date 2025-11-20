@@ -278,6 +278,7 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
     if vim.api.nvim_call_function("has", { "nvim-0.9" }) == 1 then
         hl.lsp = {
             ["@lsp.type.comment"] = hl.treesitter[ "@comment"],
+            ["@lsp.type.constant"] = hl.treesitter["@constant"],
             ["@lsp.type.enum"] = hl.treesitter["@type"],
             ["@lsp.type.enumMember"] = hl.treesitter["@constant.builtin"],
             ["@lsp.type.interface"] = hl.treesitter["@type"],
