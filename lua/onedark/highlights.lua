@@ -293,12 +293,14 @@ if vim.api.nvim_call_function("has", { "nvim-0.8" }) == 1 then
             ["@lsp.type.number"] = hl.treesitter["@number"],
             ["@lsp.type.generic"] = hl.treesitter["@text"],
             ["@lsp.type.builtinType"] = hl.treesitter["@type.builtin"],
+            ["@lsp.mod.readonly"] = hl.treesitter["@constant"],
             ["@lsp.typemod.method.defaultLibrary"] = hl.treesitter["@function"],
             ["@lsp.typemod.function.defaultLibrary"] = hl.treesitter["@function"],
             ["@lsp.typemod.operator.injected"] = hl.treesitter["@operator"],
             ["@lsp.typemod.string.injected"] = hl.treesitter["@string"],
             ["@lsp.typemod.variable.defaultLibrary"] = hl.treesitter["@variable.builtin"],
             ["@lsp.typemod.variable.injected"] = hl.treesitter["@variable"],
+            ["@lsp.typemod.variable.readonly"] = hl.treesitter["@constant"],
             ["@lsp.typemod.variable.static"] = hl.treesitter["@constant"],
         }
     end
